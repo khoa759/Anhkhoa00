@@ -3,7 +3,7 @@ body {
     margin: 20px;
 }
 
-/* Vùng 1: Blue background, Yellow text, Red border (20px) - Uses Flexbox for centering */
+/* Vùng 1: Nền xanh dương, chữ vàng, viền đỏ (20px) - Dùng Flexbox để căn giữa */
 #vung1 {
     display: flex; 
     flex-direction: column; 
@@ -18,7 +18,7 @@ body {
     box-sizing: border-box; 
 }
 
-/* Vùng 2: Green background, Yellow text, Pink border (70px) */
+/* Vùng 2: Nền xanh lá, chữ vàng, viền hồng (70px) */
 #vung2 {
     background-color: green; 
     color: yellow; 
@@ -29,9 +29,9 @@ body {
     box-sizing: border-box;
 }
 
-/* Vùng 3: Light Purple background, Dark Orange text, Black border (20px) */
+/* Vùng 3: Nền tím nhạt, chữ cam đậm, viền đen (20px) */
 #vung3 {
-    background-color: #d1c4e9; /* Light Purple */
+    background-color: #d1c4e9; 
     color: darkorange; 
     border: 20px solid black; 
     
@@ -39,7 +39,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Required rule for flexible image scaling (responsive) */
+/* Quy tắc BẮT BUỘC để ảnh co dãn linh hoạt (responsive) */
 img {
     max-width: 100%;
     height: auto;
@@ -47,64 +47,65 @@ img {
     margin-top: 10px;
 }
 
-/* Ensure navigation text content is also centered */
+/* Đảm bảo nội dung chữ của thanh điều hướng cũng được căn giữa */
 #vung1 p {
-    text-align: center;
-    width: 100%;
+     text-align: center;
+     width: 100%;
 }
 
-/* Style for navigation links (Creating an Excel cell effect) */
+/* Kiểu cho các liên kết điều hướng (Tạo hiệu ứng ô Excel) */
 .nav-links a {
-    /* Separate frame and clear border */
+    /* Đóng khung riêng lẻ và viền rõ ràng */
     border: 1px solid yellow; 
     padding: 8px 15px; 
     
-    /* Stick together (like Excel cells) */
+    /* Dính liền nhau (như ô Excel) */
     margin: 0; 
     border-radius: 0; 
     
-    /* Display settings */
+    /* Thiết lập hiển thị */
     display: inline-block; 
     text-decoration: none; 
     color: yellow; 
-    background-color: #004d40; /* Dark Teal */
+    background-color: #004d40; 
     transition: background-color 0.3s; 
 }
 
-/* Handle border so adjacent cells have a single border line */
+/* Xử lý viền để các ô liền kề viền đơn */
 .nav-links a + a {
     border-left-width: 0;
 }
 
 
-/* Hover effect style */
+/* Kiểu khi di chuột vào (Hover effect) */
 .nav-links a:hover {
-    background-color: #006064; /* Teal */
+    background-color: #006064; 
 }
 
 /* ========================================= */
-/* NEWLY ADDED FORM FRAME RULES */
+/* QUY TẮC ĐÓNG KHUNG FORM MỚI THÊM */
 /* ========================================= */
 
-/* Frame for the entire Form in Area 2 */
+/* Đóng khung cho toàn bộ Form trong Vùng 2 */
 .form-khung {
-    border: 3px solid yellow; /* 3px thick yellow border */
-    padding: 20px; 
-    margin-top: 15px; 
-    border-radius: 8px; 
+    border: 3px solid yellow; /* Viền màu vàng dày 3px */
+    padding: 20px; /* Tạo không gian bên trong khung */
+    margin-top: 15px; /* Khoảng cách với Bảng điểm */
+    border-radius: 8px; /* Bo tròn góc nhẹ */
+    /* Đảm bảo text bên trong khung vẫn là màu vàng của Vùng 2 */
     color: yellow; 
 }
 
-/* Optimize display of input, select, and button on green background */
+/* Tối ưu hiển thị input, select và button trên nền xanh lá */
 .form-khung input[type="text"],
 .form-khung input[type="email"],
 .form-khung select {
     color: black; 
     background-color: white;
-    border: 1px solid #ccc; /* Light Gray */
+    border: 1px solid #ccc;
     padding: 3px;
     border-radius: 3px;
-    width: 200px; 
+    width: 200px; /* Cố định chiều rộng cho dễ nhìn */
 }
 
 .form-khung button {
@@ -116,11 +117,11 @@ img {
 }
 
 .form-khung button[type="submit"] {
-    background-color: #ffc107; /* Amber/Orange for Login */
-    color: #333; /* Dark Gray */
+    background-color: #ffc107; /* Màu vàng cam cho Đăng nhập */
+    color: #333;
 }
 
 .form-khung button[type="button"] {
-    background-color: #e53935; /* Strong Red for Exit */
+    background-color: #e53935; /* Màu đỏ cho Thoát */
     color: white;
 }
